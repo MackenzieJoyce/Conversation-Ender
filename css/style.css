@@ -1,7 +1,7 @@
 body { 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
-    background: url('images/nerdWall.png') no-repeat center center;
+    background: url('../images/nerdWall.png') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
