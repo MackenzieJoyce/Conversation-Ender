@@ -14,10 +14,11 @@ body {
 }
 
 .App { 
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
-    background: url('../images/nerdWall.png') no-repeat center center;
-    background-size: cover;
+    /* background: url("./assets/images/nerdWall.png") no-repeat center center;
+    background-size: cover; */
+    background: rgb(216, 144, 255);
     position: fixed;
     top: 0; 
     left: 0;
@@ -31,9 +32,9 @@ body {
 
 /* COMPUTER BODY */
 #compFrame { 
-    width: 80%;
-    height: 70%;
-    margin-top: 15%;
+    width: 70%;
+    height: 90%;
+    margin-top: 2.3%;
     background: rgb(220, 220, 193); 
     border: none;
     border-radius: 4px;
@@ -44,12 +45,12 @@ body {
 
 #compStand { 
     width: 50%;
-    height: 10%;
+    height: 5%;
     background: rgb(169, 169, 146); 
     position: fixed;
-    bottom: 15px;
+    bottom: 0px;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px 30px 0 0;
 }
 
 
