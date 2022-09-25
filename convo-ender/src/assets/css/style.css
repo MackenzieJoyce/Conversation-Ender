@@ -3,6 +3,9 @@
 } */
 
 
+
+
+
 /* GENERAL AND TYPOGRAPHY */
 body { 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,8 +27,9 @@ body {
 
 
 
-/* COMPUTER BODY */
 
+
+/* COMPUTER BODY */
 #compFrame { 
     width: 80%;
     height: 70%;
@@ -51,20 +55,38 @@ body {
 
 
 
-#background { 
+
+/* ON THE SCREEN */
+#compScreen { 
     width: 80%; 
-    height: 400px; 
-    border: 2px solid rgb(111, 156, 234);
-    background-color: lightblue;
+    height: 70%; 
+    border: 2px solid lightblue;
     display: flex;
     flex-direction: column;
+}
+
+#desktop { 
+    width: 100%;
+    height: 90%;
+    background: rgb(111, 156, 234);
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+#appBar { 
+    width: 100%;
+    height: 10%;
+    background: rgb(54, 54, 253);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 
 /* VVV changed from aim */
-
-
 #conversation {  
     width: 400px;
     height: 300px;
@@ -122,14 +144,6 @@ body {
 
 #thirdOption, #doubleText, .shutDown, #badEnd, #revenge{ 
     display: none;
-}
-
-.taskbar { 
-    width: 100%;
-    height: 30px;
-    background-color: rgb(54, 54, 253);
-    margin-top: 20px;
-    border-top: 3px solid lightgray;
 }
 
 .taskbar img { 

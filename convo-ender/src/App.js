@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App">
       <section id="compFrame">
-        <section id="compDisplay">
-          <section id="screen"></section>
+        <section id="compScreen">
+          <section id="desktop"></section>
           <section id="appBar"></section>
         </section>
       </section>
