@@ -1,10 +1,10 @@
 // https://www.rapidtables.com/convert/number/ascii-to-binary.html 
 
-const promptsChoices = [
+const promptsAndChoices = [
     {
         id: 1,
         text: 'heeeeeey wut r u doin',
-        options: [
+        choices: [
             {
                 text: 'Just organizing my Pokemon deck after this sick tournament I went to on Friday.',
                 setState: { pokemon: true },
@@ -20,7 +20,7 @@ const promptsChoices = [
     { 
         id: 2,
         text: 'lol you still play that??',
-        options: [
+        choices: [
             {
                 text: 'Hells yeah! The Pokemon world has become exponentially greater with each generation!',
                 requiredState: (currentState) => currentState.pokemon,
@@ -39,7 +39,7 @@ const promptsChoices = [
     {
         id: 3, 
         text: 'suuuuuuure... nerd',
-        options: [
+        choices: [
             {
                 text: 'Wheres your sense of adventure?',
                 requiredState: (currentState) => currentState.no,
@@ -57,7 +57,7 @@ const promptsChoices = [
     {
         id: 4, 
         text: 'i actually go outside n talk to ppl XD u no? those things that look lik u but rnt lol',
-        options: [
+        choices: [
             {
                 text: 'ha ha very funny. I go outside! Im going to a midnight release next Saturday',
                 requiredState: (currentState) => currentState.adventure,
@@ -69,7 +69,7 @@ const promptsChoices = [
     {
         id: 5,
         text: 'um yeah of course i do. i have fun in ways you wouldnt even believe >:)',
-        options: [
+        choices: [
             {
                 text: 'Oh yeah? Like what?',
                 // Next Time 
@@ -85,7 +85,7 @@ const promptsChoices = [
     {
         id: 6, 
         text: 'wow so u do have friends lol',
-        options: [
+        choices: [
             {
                 text: 'Well duh! Wait... Do you know what DnD is???',
                 requiredState: (currentState) => currentState.dnd,
@@ -104,7 +104,7 @@ const promptsChoices = [
     {
         id: 7, 
         text: 'mhmmmmmmm i still play sometimes ;) playing a dark elf wizard wuz da best lol',
-        options: [
+        choices: [
             {
                 text: 'Woah thats awesome!',
                 requiredState: (currentState) => currentState.youKnowDnD,
@@ -122,7 +122,7 @@ const promptsChoices = [
     {
         id: 8, 
         text: 'yeah im pretty cool ;)',
-        options: [
+        choices: [
             {
                 text: 'What else do you like to do?',
                 // Next Time 
@@ -138,7 +138,7 @@ const promptsChoices = [
     {
         id: 9,
         text: 'wow ok. wuts da best then??',
-        options: [
+        choices: [
             {
                 text: 'Well my character is a half-human brawler! Theyre a little more complex so it makes sense you would go for something easier.',
                 // BSOD 
@@ -156,7 +156,7 @@ const promptsChoices = [
         // Sweaty --> Restart 
         id: 011100110111011101100101011000010111010001111001, 
         text: 'well then maybe ill c u there ;) *user has logged out*',
-        options: [
+        choices: [
             {
                 text: '(Your palms sweat thinking about thinking about seeing her IRL)',
                 nextText: -1,
@@ -167,7 +167,7 @@ const promptsChoices = [
         // Slut --> BSOD 
         id: 01110011011011000111010101110100,
         text: 'wut does that mean??????',
-        options: [
+        choices: [
             {
                 text: 'Well with your username it looks like you enjoy a certain kind of fun',
                 // BSOD 
@@ -179,7 +179,7 @@ const promptsChoices = [
         // Next Time --> Ellipse Safe 
         id: 011011100110010101111000011101000010000001110100011010010110110101100101,
         text: 'maybe ill tell you next time',
-        options: [
+        choices: [
             {
                 text: 'What do you mean?',
                 // Log Out Safe 
@@ -191,7 +191,7 @@ const promptsChoices = [
         // Ellipse Fatal --> Log Out Fatal 
         id: 0110010101101100011011000110100101110000011100110110010100001010,
         text: '...',
-        options: [
+        choices: [
             {
                 text: 'hello?',
                 requiredState: (currentState) => currentState.yes,
@@ -209,7 +209,7 @@ const promptsChoices = [
         // Log Out Fatal --> Restart OR BSOD 
         id: 0110110001101111011001110110111101110101011101000110011001100001011101000110000101101100,
         text: '*user has logged out*',
-        options: [
+        choices: [
             {
                 text: '(Lets log out and try again...)',
                 nextText: -1
@@ -227,7 +227,7 @@ const promptsChoices = [
         // Ellipse Safe --> Log Out Safe 
         id: 0110010101101100011011000110100101110000011100110110010100001010,
         text: '...',
-        options: [
+        choices: [
             {
                 text: 'hello?',
                 requiredState: (currentState) => currentState.yes,
@@ -245,7 +245,7 @@ const promptsChoices = [
         // Log Out Safe --> Restart 
         id: 01101100011011110110011101101111011101010111010001110011011000010110011001100101,
         text: '*user has logged out*',
-        options: [
+        choices: [
             {
                 text: '(What did she mean by that?...)',
                 nextText: -1
