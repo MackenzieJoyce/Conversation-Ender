@@ -1,6 +1,8 @@
 import React from 'react';
 
 function Im() {
+
+    
   return (
     <section id="IMWindow">
       <section id="titleBar"></section>
