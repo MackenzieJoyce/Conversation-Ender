@@ -253,3 +253,5 @@ const promptsAndChoices = [
         ] 
     }
 ]
+
+export default promptsAndChoices;
