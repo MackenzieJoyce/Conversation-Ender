@@ -26,6 +26,10 @@ body {
     justify-content: center;
 }
 
+button:hover { 
+    cursor: pointer;
+}
+
 
 
 
