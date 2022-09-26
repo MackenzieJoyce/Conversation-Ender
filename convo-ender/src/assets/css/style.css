@@ -75,6 +75,47 @@ body {
     align-items: center;
 }
 
+
+
+    /* INSTANT MESSAGING WINDOW */
+#IMWindow { 
+    width: 60%;
+    height: 75%;
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+#titleBar { 
+    width: 100%;
+    height: 5%;
+    background: rgb(54, 54, 253);
+}
+
+#conversation { 
+    width: 100%;
+    height: 70%;
+    background: #fff;
+}
+
+#userInteractionBox { 
+    width: 100%;
+    height: 25%;
+    background: rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-around;
+}
+
+#sendMessage { 
+    margin: 5% 1%;
+    padding: 1%;
+    background: rgba(99, 99, 99, 0.26);
+    border: 1px solid rgba(54, 54, 54, 0.548);
+}
+
+
+
 #appBar { 
     width: 100%;
     height: 10%;
@@ -86,15 +127,8 @@ body {
 
 
 
-
 /* VVV changed from aim */
-#conversation {  
-    width: 400px;
-    height: 300px;
-    border: 3px solid lightgray;
-    background-color: white;
-    margin-top: 40px;
-}
+
 
 .blueBar { 
     width: 100%;
