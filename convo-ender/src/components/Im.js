@@ -1,8 +1,11 @@
 import React from 'react';
 
+// import promptsAndChoices from '../utils/promptsAndChoices';
+
 function Im() {
 
     
+
   return (
     <section id="IMWindow">
       <section id="titleBar"></section>
